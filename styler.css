@@ -1,0 +1,126 @@
+#toantrang {
+    width: 1500px;
+    height: 10000px;
+    margin: auto;
+    border: 1pt solid white;
+    background-image: url(ANH/nenwed.jpg);
+    
+}
+#header {
+    width: 100%;
+    height: 1%;
+    display: flex;
+    justify-content: space-around; /* khoảng cách giao diện flex container*/
+}
+
+#header_item {
+    display:flex;
+    flex-basis: 30%; /* kích thước của flex*/
+}
+.header_item1 {
+    
+    align-content: center;
+    color: black;
+    list-style: none;/*bỏ dấu hoặc số trước thẻ lili */
+    margin: auto;
+    
+}
+.header_item2 {
+    background-color:transparent;
+    text-decoration: none;
+    padding: 20px 40px;
+    color: black;
+    border-radius: 40px;
+}
+.header_item2:hover{
+    color: rgb(0, 0, 0);
+    background-color:yellow;
+    border-radius: 40px;
+    cursor: pointer;
+    transform: translateY(-10px);
+    
+}
+.header_item2  + .header_item2 {
+    margin-right: 50px;
+}
+#menu {
+    width: 100%;
+    
+    
+}
+#menu_main {
+    cursor: pointer;
+    list-style: none;
+    display: flex;
+    margin: auto;
+    justify-content: space-around;
+}
+.menu_item {
+    padding: 20px 40px;
+    background-color: transparent;
+    text-decoration: none;/*bỏ dấu gạch dưới chữ của thẻ aa*/
+    color: black;
+    border-radius: 40px;
+    position: fixed;
+    bottom: 30px;
+    min-width: 200px;
+}
+.menu_item:hover {
+    color:black;
+    background-color:yellow;
+    border-radius: 40px;
+    cursor: pointer;
+    
+}
+#main {
+    width: 100%;
+    height: 80%;
+}
+
+.main_title {
+    font-size: 30px;
+    margin-left: 150px;
+    color: #000;
+}
+.main_title:hover {
+    animation: gachchanao 5s forwards;
+    cursor: pointer;
+}
+@keyframes gachchanao {
+     0% {
+        transform: scaleX(0) ;
+    } 50% {
+        transform: scaleX(1);
+    } 100%{
+        transform: scaleX(0);
+    }
+}
+.main_content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.product {
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 20px;
+    width: 200px;
+    transition: transform 0.3s;
+}
+
+.product img {
+    width: 400px;
+    border-radius: 10px;
+}
+
+.product p {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.product:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
